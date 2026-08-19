@@ -16,6 +16,7 @@ public class StudentEntity {
     private String email;
     private int rollno;
     private String subject;
+    private Boolean deleted;
 
     public long getId() {
         return id;
@@ -64,4 +65,14 @@ public class StudentEntity {
     public void setSubject(String subject) {
         this.subject = subject;
     }
+
+	private Boolean getDeleted() {
+		return deleted;
+	}
+
+	private void setDeleted(Boolean deleted) {
+		this.deleted = deleted;
+	}
+
+	
 }
